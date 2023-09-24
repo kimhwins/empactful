@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129139358-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-129139358-1");
+
+    import AOS from "aos";
+    import "aos/dist/aos.css";
+
+    // init AOS animation
+    window.addEventListener("load", () => {
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () { AOS.refresh(); }, 500);
+    });
+
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kim Huynh</title>
+
+  <link rel="stylesheet" href="style copy.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+  <!-- <link rel="icon" href="http://www.kimhuynh.net/favicon.ico?v=2" /> -->
+  <link rel="icon" href="logo.ico" />
+</head>
+
+<body>
+
+  <div id="all-the-top-stuff">
+    <div class="navigation">
+      <div class="nav-button float"><a href="https://www.kimhuynh.net/#work/">Work</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/play/">Play</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/about-me/">About</a></div>
+      <div class="nav-button float">
+        <a id="non-select" class="last-nav" href="https://goo.gl/7mjuQz" target="_blank">Resume</a>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="http://www.kimhuynh.net"><img src="images/logo.svg" alt="Kim Huynh"></a>
+    </div>
+
+    <div class="header">
+      <img class="hero fadein" src="images/empactful hero.png">
+    </div>
+
+    <div class="headline">
+      <div data-aos="fade-down">
+        <div class="wrapper">
+          <img class="row-icon" src="images/empactful.png">
+        </div>
+        <div id="title">
+          <div>Empactful</div>
+        </div>
+      </div>
+
+      <div data-aos="fade-down" data-aos-delay="500" class="headline-2">Student-led fintech startup focused<br>
+        on investing in social good</div>
+      <br /><br />
+
+      <div data-aos="fade-down" data-aos-delay="800">
+        <div class="half-row-2" style="padding-top: 40px;">
+
+          <div class="column-50">
+            <div class="subheader-33">Role</div>
+            <div class="body-33">
+              Lead designer <br>
+              (freelance)
+            </div>
+          </div>
+          <div class="column-50">
+            <div class="subheader-33">Project scope</div>
+            <div class="body-33">
+              Designing 0→1, UI design, <br>
+              & branding
+            </div>
+          </div>
+        </div>
+
+        <div class="half-row-2" style="padding-top: 20px;">
+
+          <div class="column-50">
+            <div class="subheader-33">team</div>
+            <div class="body-33">
+              Executive board <br>
+              (CEO & CTO)
+            </div>
+          </div>
+          <div class="column-50">
+            <div class="subheader-33">timeline</div>
+            <div class="body-33">
+              ~ 2 months
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div data-aos="fade" data-aos-delay="300" class="scroll-downs">
+      <div id="scroll" class="mousey">
+        <div class="scroller"></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-down" class="intro-container">
+    <div class="intro-box">
+      <div style="font-family: 'Kollektif-Bold'; white-space: nowrap;"><span
+          style="display:inline-block; vertical-align: middle; margin-right:8px;"><img src="images/warning-red.png"
+            style="padding-top: 3px;"></span>Warning:</div>
+      <div id="tip-text">This case study is <span style="font-family: Kollektif-BoldItalic;">incomplete!</span> The
+        designs were also made while I was still in school, during a short freelancing gig
+        that focused on a speedy, surface level MVP. Looking for more recent (& complete) work? Check out <span
+          class="bold"><a href="http://www.kimhuynh.net/marketplace/" id="warning-link">my
+            latest case study.</a></span></div>
+      <a href="https://www.kimhuynh.net/marketplace/" style="margin: auto;"><button class="skip-proto">See Recent
+          Work</button></a>
+    </div>
+  </div>
+
+  <div style="margin: 0 10% 0 10%" id="parent">
+    <div>
+      <nav class="toc sticky">
+        <ul>
+          <li>
+            <a href="#overview">Overview</a>
+          </li>
+          <li>
+            <a href="#prototypes">Prototypes</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="testing" style="padding-top: 15px;">
+        <div class="contents">
+          <section data-aos="fade-down" id="overview">
+            <h3>👀 OVERVIEW</h3>
+            <h2>
+              While I was still in university, I freelanced with <br>
+              a student startup to design <span class="highlight-text2">a social good</span><br>
+              <span class="highlight-text2">investment platform from the ground up.</span>
+            </h2>
+            <p>
+              Co-founded by a student from our business school, Empactful was still only a well-defined idea with
+              nothing but
+              pre-seed funding when I joined--nothing built or designed. With limited resources and a looming launch
+              date, I spent
+              several weeks <span class="bold highlight-text-p">defining a simplistic brand identity,</span>
+              <span class="bold highlight-text-p">turning the basic user flowchart into an MVP design for web</span> to
+              be
+              handed off to the contracted eng team, and <span class="bold highlight-text-p">designing a branded VC
+                pitch deck for seed funding.</span>
+              <br>
+              <br>
+              This was my first freelancing gig, & I learned a lot about balancing client’s wants and needs on top of
+              user’s best
+              interests in my design work!
+            </p>
+            <!-- <div>
+              <a href="#prototype"><button class="skip-proto"
+                  style="color:black; border: 2px solid black; margin-top: 25px; margin-bottom: 10px;">Skip to
+                  Prototype</button></a>
+            </div> -->
+          </section>
+
+
+
+
+          <section  id="prototypes">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <div data-aos="fade-down">
+            <h3>🖥️ PROTOTYPES</h3>
+            <h2>
+              Take a look at the final prototypes<br>
+              delivered to the client.
+            </h2>
+            <p>
+              Note: due to limited time & budget, the prototypes use free illustrations and icons from <span
+                class="bold">Undraw</span> & <span class="bold">Flaticon.</span>
+            </p>
+            </div>
+            <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; margin-top: 80px; margin-bottom: 90px;">
+              <img class="img-33 prototype-mask" style="padding: 0 0;" src="images/empactful onboarding.gif">
+              <div class="title-mocks">
+                Signing Up
+              </div>
+              <div class="subtitle-mocks">
+                A straightforward mail & the registration flow (with added legal agreements, since it's a financial platform)
+              </div>
+              </div>
+
+              <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; padding-top: 40px; margin-bottom: 90px;">
+                <img class="img-33 prototype-mask" style="padding: 0 0;" src="images/empactful create track.gif">
+                <div class="title-mocks">
+                  Overview & Add a Track
+                </div>
+                <div class="subtitle-mocks">
+                  The homepage with an overview of your portfolio, and the one page flow of creating a new investment track. Empactful encourages investing in areas focused on social good!
+                </div>
+
+              </div>
+
+
+
+              <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; padding-top: 40px; margin-bottom: 90px;">
+                <img class="img-33 prototype-mask" style="padding: 0 0;" src="images/empactful track details.gif">
+                <div class="title-mocks">
+                  Track Details
+                </div>
+                <div class="subtitle-mocks">
+                  Home to a suite of actions you can take on each investment track, like editing or liquidating
+                </div>
+                </div>
+
+
+                <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; padding-top: 40px; margin-bottom: 90px;">
+                  <img class="img-33 prototype-mask" style="padding: 0 0;" src="images/empactful donate.gif">
+                  <div class="title-mocks">
+                    Donate
+                  </div>
+                  <div class="subtitle-mocks">
+                    As part of its social good mission, the platform promotes donating profits from investments to charities, and donation history is collected in one convenient place for tax season
+                  </div>
+                </div>
+
+                <div data-aos="fade-down" class="row-mocks" style="flex-direction: column; padding-top: 40px; margin-bottom: 0px;">
+                  <img class="img-33 prototype-mask" style="padding: 0 0;" src="images/empactful accounts and profile.gif">
+                  <div class="title-mocks">
+                    Accounts & Profile Settings
+                  </div>
+                  <div class="subtitle-mocks">
+                    A simple overview of financial accounts & management, plus general settings for your Empactful account
+                  </div>
+                </div>
+
+                <!-- <div class="half-row-2">
+                                <img class="img-33" style="padding: 0 0;" src="images/usability testing.png">
+                            
+                              </div> -->
+
+                <!-- <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 40px;">
+              <video class="img-33 prototype-mask" controls style="padding: 0 0; width: 99.5%;">
+                <source src="images/adobe prototype video.mp4" type="video/mp4">
+              </video>
+            </div> -->
+
+
+
+
+          </section>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="parent">
+      <div class="closing" data-aos="fade-down">
+        <hr>
+        <div>
+          <div style="padding-top:30px; letter-spacing: 0.48px; width: fit-content;">
+
+            Thanks for reading! <span><img src="images/hi.png" id="hi-sparkle"></span></div>
+          <div id="lookingfor">
+            Looking for more?
+          </div>
+
+          <div class="half-row-3">
+            <div class="column-33" data-aos="fade-down">
+              <div style="position: relative;">
+                <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                <img class="flourishes" style="bottom:-13px; right: -35px; width: 85px;" src="images/fb flourish.png">
+                <a href="http://www.kimhuynh.net/marketplace/">
+
+                  <img class="img-33" style="padding: 0 0;" src="images/new marketplace mocks.png">
+                </a>
+              </div>
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/marketplace/" class="header-33-2 float-4">Facebook
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">As a designer on Marketplace, I helped sellers succeed with promotions and
+                  incentives</div>
+              </div>
+            </div>
+
+            <div class="column-33" data-aos="fade-down" data-aos-delay="200">
+              <div style="position: relative;">
+                <img class="flourishes" id="left-sparkle" src="images/left sparkle.png">
+                <img class="flourishes" style="bottom:-18px; right: -30px; width: 72px;"
+                  src="images/adobe flourish.png">
+                <a href="http://www.kimhuynh.net/adobe/">
+
+                  <img class="img-33" style="padding: 0 0;" src="images/new adobe mocks.png">
+                </a>
+              </div>
+
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/adobe/" class="header-33-2 float-4">Adobe
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">I interned on the Analytics team, redesigning and streamlining the way users build data viz
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-33" data-aos="fade-down" style="margin-right: 0;" data-aos-delay="400">
+              <div style="position: relative;">
+                <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                <img class="flourishes" style="bottom:-12px; right: -18px; width: 72px;" src="images/storia flourish.png">
+                <a href="http://www.kimhuynh.net/storia/">
+              
+                  <img class="img-33" style="padding: 0 0;" src="images/new storia mocks.png">
+                </a>
+              </div>
+              
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/storia/" class="header-33-2 float-4">Storia
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">I designed a journaling app concept to inspire busy people to write
+                </div>
+              </div>
+
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div><button class="float-3 scroll-top"><img src="images/top.svg"></button></div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 80, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1250, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () { AOS.refresh(); }, 500);
+      });
+
+
+
+
+      var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var tableofcontents = document.querySelector(".toc");
+      var rootElement = document.documentElement;
+
+      function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if (rootElement.scrollTop / scrollTotal > 0.05) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn");
+          // tableofcontents.classList.add("showBtn");
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn");
+          // tableofcontents.classList.remove("showBtn");
+        }
+      }
+
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+
+
+
+
+      //   let options = {
+      //     // rootMargin: '5px 10px', // works just like margin on element
+      //     threshold: 0.3 // when ~90% of element is visible, trigger IO
+      //   }
+
+      //   let observer = new IntersectionObserver(callback, options); // trigger callback function when provided options match for an element
+      //   let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //     targets.forEach(target => { // loop through your elements
+      //       observer.observe(target); // observe them
+      //     });
+
+      // // the callback we setup for the observer will be executed now for the first time
+      // // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+      //   let callback = (entries, observer) => {
+      //     entries.forEach(entry => {
+      //       // Each entry describes an intersection change for one observed
+      //       // target element:
+      //       //   entry.boundingClientRect...
+      //       // Your .inactive element is in viewport.
+      //        if (entry.isIntersecting) {
+      //           // Show button
+      //           entry.boundingClientRect.classList.add("highlight-text-p-animate");
+      //         }
+      //     });
+      //   };
+
+
+
+
+
+      //     // We select the element we want to target
+      // var target = document.querySelector(".scroll-top-container");
+
+      // var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var rootElement = document.documentElement;
+
+      // // Next we want to create a function that will be called when that element is intersected
+      // function callback(entries, observer) {
+      //   // The callback will return an array of entries, even if you are only observing a single item
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       // Show button
+      //       scrollToTopBtn.classList.add("showBtn");
+      //     } else {
+      //       // Hide button
+      //       scrollToTopBtn.classList.remove("showBtn");
+      //     }
+      //   });
+      // }
+
+      // function scrollToTop() {
+      //   rootElement.scrollTo({
+      //     top: 0,
+      //     behavior: "smooth"
+      //   });
+      // }
+      // scrollToTopBtn.addEventListener("click", scrollToTop);
+
+      // // Next we instantiate the observer with the function we created above. This takes an optional configuration
+      // // object that we will use in the other examples.
+      // let observer = new IntersectionObserver(callback);
+      // // Finally start observing the target element
+      // observer.observe(target);
+
+
+
+
+
+      // array of the links in the toc (table of content) block
+      var toc;
+      // array of content (links are refers to the content)
+      var content = [];
+
+      // call prepare function for while page is loaded complete
+      document.addEventListener('DOMContentLoaded', function () {
+        prepare();
+        sync();
+      }, false);
+
+      /**
+       * this function get all toc (table of content) links and content 
+       * and save theme
+       */
+      function prepare() {
+        // get all toc (table of content) links
+        toc = document.querySelectorAll('.toc a');
+        let targets = document.querySelectorAll('.highlight-text-p');
+        // get content so that link refer to it
+        toc.forEach(function (link) {
+          var id = link.getAttribute("href");
+          var element = document.querySelector(id);
+          content.push(element);
+        });
+        // sync toc (table of content) whit part of content that is 
+        // visible into viewport while user scroll
+        window.addEventListener("scroll", sync, false);
+      }
+
+
+      /**
+       * this function check if element is visible in viewport 
+       * 
+       * @argument {String} element which we need to check it 
+       * @returns true if element is visible in viewport else return false 
+       */
+      function isElementInViewport(element) {
+        // get element position
+        var rect = element.getBoundingClientRect();
+
+        // return true if a partial of the element is visible
+        return (rect.bottom >= 0 &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight));
+
+        // for while we need check if all off the element is visible in viewport
+        // return (rect.top >= 0 &&
+        //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));
+      }
+
+      /**
+       * this function highlight toc (table of content) links which is visible in viewport
+       */
+      function sync() {
+        // check all content 
+        for (var i = 0; i < content.length; i++) {
+          // if content is visible if viewport highlight it 
+          // else remove highlight from it
+          if (isElementInViewport(content[i])) {
+            // toc[i].classList.add('highlight');
+            toc[i].setAttribute("id", "highlight");
+          } else {
+            // toc[i].classList.remove('highlight');
+            toc[i].removeAttribute("id", "highlight");
+          }
+        }
+      }
+
+      var child1 = document.querySelector(".placeholder");
+      var child2 = document.querySelector(".contents");
+      var parent = document.getElementById("parent");
+      var test = document.querySelector(".testing");
+      var nav = document.querySelector(".toc");
+
+      // var childHeight = parseInt(window.getComputedStyle(child2).height) + "px";
+      var navWidth = (parseInt(window.getComputedStyle(nav).width) + 40) + "px";
+      var navHeight = parseInt(window.getComputedStyle(nav).height);
+      // child1.style.paddingTop = childHeight;
+      test.style.paddingLeft = navWidth;
+      test.style.paddingRight = navWidth;
+      test.style.marginTop = (0 - navHeight) + "px";
+
+
+
+
+      //       let options = {
+      //   rootMargin: 0, // works just like margin on element
+      //   threshold: 0.5 // when ~90% of element is visible, trigger IO
+      // }
+
+
+
+      // the callback we setup for the observer will be executed now for the first time
+      // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+
+      // let callback = (entries, observer) => {
+      //   entries.forEach(entry => {
+      //     // Each entry describes an intersection change for one observed
+      //     // target element:
+      //     //   entry.boundingClientRect...
+      //     // Your .inactive element is in viewport.
+      //      if (entry.isIntersecting) {
+      //         // Show button
+      //         entry.classList.add("highlight-text-p-animate");
+      //       }
+      //   });
+      // };
+
+      //       let observer = new IntersectionObserver(callback); // trigger callback function when provided options match for an element
+
+      //           let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //           targets.forEach(target => { // loop through your elements
+      //             observer.observe(target); // observe them
+      //           });
+
+      const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text2-animate", entry.isIntersecting);
+        });
+      };
+
+      const inViewport2 = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text-p-animate", entry.isIntersecting);
+        });
+      };
+
+      const Obs = new IntersectionObserver(inViewport);
+      const Obs2 = new IntersectionObserver(inViewport2);
+      const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+      // Attach observer to every [data-inviewport] element:
+      document.querySelectorAll('.highlight-text2').forEach(el => {
+        Obs.observe(el, obsOptions);
+      });
+
+      document.querySelectorAll('.highlight-text-p').forEach(el => {
+        Obs2.observe(el, obsOptions);
+      });
+
+    </script>
+</body>
+
+</html>
